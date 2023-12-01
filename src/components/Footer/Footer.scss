@@ -1,0 +1,48 @@
+.footer {
+    padding: 30px 50px 81px 50px;
+    margin-top: 70px;
+    background: #1F1F1F;
+    @include media($sm) {
+        padding-bottom: 40px;
+    }
+    
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 50px;
+        @include media($xs) {
+            gap: 30px;
+        }
+    }
+    
+    &__link {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 30px;
+        
+    }
+    
+    &__desc {
+        color: #A5A5A5;
+        font-family: $font-mon;
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        @include media($xs) {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+    
+    &__logo {
+        display: block;
+        margin: auto;
+        margin-top: 81px;
+        @include media($sm) {
+            margin-top: 40px;
+            max-width: 150px;
+        }
+    }
+}

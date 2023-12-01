@@ -1,0 +1,55 @@
+.enter {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 101px;
+    @include media($sm) {
+        padding-top: 72px;
+    }
+    
+    &__form {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        padding: 30px;
+        border-radius: 10px;
+        gap: 20px;
+        align-items: center;
+        font-size: 20px;
+    }
+    
+    &__label {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        @include media($xs) {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            
+            &::placeholder {
+                color: rgb(52, 52, 52);
+            }
+        }        
+    }
+    
+    &__submit {
+        @extend .more;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-size: 16px;
+    }
+    
+    &__confirm {
+        font-size: 16px;
+        font-style: italic;
+        color: red;
+    }
+}
