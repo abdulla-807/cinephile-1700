@@ -1,0 +1,1 @@
+import{_ as e}from"./Single-d3073a6d.js";import{o as a,c as o,a as s}from"./index-8a2256ec.js";const t={class:"main"},i={__name:"FilmsId",setup(c){return(_,m)=>(a(),o("main",t,[s(e,{type:"movie"})]))}};export{i as default};
